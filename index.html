@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="outer-div">
+        <div class="container">
+            <div class="calc-display">
+            <p class="numbers" id="numbers"></p>
+            </div>
+            <div class="button-container">
+                <div class="num-pad">
+                    <button class="num-btn" onclick="writeNumber(1)">1</button>
+                    <button class="num-btn" onclick="writeNumber(2)">2</button>
+                    <button class="num-btn" onclick="writeNumber(3)">3</button>
+                    <button class="num-btn" onclick="writeNumber(4)">4</button>
+                    <button class="num-btn" onclick="writeNumber(5)">5</button>
+                    <button class="num-btn" onclick="writeNumber(6)">6</button>
+                    <button class="num-btn" onclick="writeNumber(7)">7</button>
+                    <button class="num-btn" onclick="writeNumber(8)">8</button>
+                    <button class="num-btn" onclick="writeNumber(9)">9</button>
+                </div>
+                <div class="operation-pad">
+                    <button class="operation-btn" onclick="operator('ce')">CE</button>
+                    <button class="operation-btn" onclick="operator('ac')">AC</button>
+                    <button class="operation-btn">÷</button>
+                    <button class="operation-btn">x</button>
+                    <button class="add-btn">+</button>
+                    <button class="operation-btn">-</button>
+                    <button class="equal-btn">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
