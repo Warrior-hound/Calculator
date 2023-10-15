@@ -7,6 +7,7 @@
         <div class="outer-div">
         <div class="container">
             <div class="calc-display">
+            <p class="operator" id="operator"></p>
             <p class="numbers" id="numbers"></p>
             </div>
             <div class="button-container">
@@ -24,11 +25,11 @@
                 <div class="operation-pad">
                     <button class="operation-btn" onclick="operator('ce')">CE</button>
                     <button class="operation-btn" onclick="operator('ac')">AC</button>
-                    <button class="operation-btn">÷</button>
-                    <button class="operation-btn">x</button>
-                    <button class="add-btn">+</button>
-                    <button class="operation-btn">-</button>
-                    <button class="equal-btn">=</button>
+                    <button class="operation-btn" onclick="operator('÷')">÷</button>
+                    <button class="operation-btn" onclick="operator('×')">×</button>
+                    <button class="add-btn" onclick="operator('+')">+</button>
+                    <button class="operation-btn" onclick="operator('−')">-</button>
+                    <button class="equal-btn"  onclick="operator('=')">=</button>
                 </div>
             </div>
         </div>

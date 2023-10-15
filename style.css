@@ -29,15 +29,27 @@ body {
     padding: 2px 2px 2px 2px;
     font-family: 'digital-clock-font';
     color: white;
+    display: block;
 }
 
 .numbers {
+    height: 90px;
     font-size: 60px;
     position: relative;
-    margin-top: 20px;
+    margin-top: -30px;
     margin-left: 20px;
     text-align: right;
     margin-right: 10px;
+  
+}
+
+.operator {
+    height: 30px;
+    position: relative;
+    text-align: right;
+    font-size: 32px;
+    margin-top: 0px;
+   
 }
 
 .button-container {
