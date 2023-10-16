@@ -15,14 +15,15 @@ body {
 .container {
     width: 550px;
     height: 100vh;
-    border: 2px solid white;
+    max-height: 700px;
+    border: 2px solid grey;
     margin-top: 40px;
 }
 
 .calc-display {
     width: 500px;
     height: 100px;
-    border: 2px solid white;
+    border: 2px solid grey;
     position: relative;
     margin-top: 70px;
     margin-left: 25px;
@@ -53,7 +54,6 @@ body {
 }
 
 .button-container {
-    border: 2px solid white;
     height: 410px;
     margin: 40px 10px 10px 10px;
     display: flex;
@@ -62,7 +62,6 @@ body {
 .num-pad {
     width: 300px;
     height: 310px;
-    border: 2px solid white;
     margin-left: 10px;
     margin-top: 90px;
     display: flex;
@@ -73,12 +72,12 @@ body {
 
 .operation-pad {
     width: 190px;
-    height: 310px;
-    border: 2px solid white;
+    height: 350px;
     margin-left: 10px;
     margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .num-btn {
@@ -88,7 +87,7 @@ body {
     margin-top: 18px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(41, 40, 40);
     font-size: 40px;
@@ -102,7 +101,7 @@ body {
     margin-top: 18px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(27, 26, 26);
     font-size: 40px;
@@ -116,7 +115,7 @@ body {
     margin-top: 18px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(41, 40, 40);
     font-size: 40px;
@@ -130,7 +129,7 @@ body {
     margin-top: 18px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(27, 26, 26);
     font-size: 40px;
@@ -138,13 +137,13 @@ body {
 }
 
 .add-btn {
-    height: 128px;
+    height: 140px;
     width: 80px;
     margin-left: 9px;
     margin-top: 18px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(41, 40, 40);
     font-size: 40px;
@@ -152,13 +151,13 @@ body {
 }
 
 .add-btn:hover {
-    height: 128px;
+    height: 140px;
     width: 80px;
     margin-left: 9px;
     margin-top: 18px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(27, 26, 26);
     font-size: 40px;
@@ -169,10 +168,11 @@ body {
     height: 60px;
     width: 80px;
     margin-left: 9px;
-    margin-top: 18px;
+    margin-top: 0px;
     margin-right: 2px;
+    position: relative;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(41, 40, 40);
     font-size: 40px;
@@ -185,10 +185,10 @@ body {
     height: 60px;
     width: 80px;
     margin-left: 9px;
-    margin-top: 18px;
+    margin-top: 0px;
     margin-right: 2px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid grey;
     border-radius: 8px;
     background-color: rgb(27, 26, 26);
     font-size: 40px;
