@@ -16,7 +16,7 @@ if(toTheme === 'light') {
     document.getElementsByClassName('keypad').item(0).setAttribute('style', 'background-color: #f9f9f9')
     document.querySelectorAll('.key').forEach(key => {
         console.log(`${key.className.replace('key', 'key-dark')}`)
-        key.className = key.className.replace('key', 'key-light')
+        key.className = key.className.replace('key', 'key-light').replace('white-icon', 'black-icon')
     })
 }
 
@@ -26,7 +26,7 @@ if(toTheme === 'dark') {
     document.getElementsByClassName('calculator').item(0).setAttribute('style', 'background-color: #292d36')
     document.getElementsByClassName('keypad').item(0).setAttribute('style', 'background-color: #292d36')
     document.querySelectorAll('.key-light').forEach(key => {
-        key.className = key.className.replace('key-light', 'key')
+        key.className = key.className.replace('key-light', 'key').replace('black-icon', 'white-icon')
     })
 }
 
