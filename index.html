@@ -1,38 +1,49 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="outer-div">
-        <div class="container">
-            <div class="calc-display">
-            <p class="operator" id="operator"></p>
-            <p class="numbers" id="numbers"></p>
-            </div>
-            <div class="button-container">
-                <div class="num-pad">
-                    <button class="num-btn" onclick="writeNumber(1)">1</button>
-                    <button class="num-btn" onclick="writeNumber(2)">2</button>
-                    <button class="num-btn" onclick="writeNumber(3)">3</button>
-                    <button class="num-btn" onclick="writeNumber(4)">4</button>
-                    <button class="num-btn" onclick="writeNumber(5)">5</button>
-                    <button class="num-btn" onclick="writeNumber(6)">6</button>
-                    <button class="num-btn" onclick="writeNumber(7)">7</button>
-                    <button class="num-btn" onclick="writeNumber(8)">8</button>
-                    <button class="num-btn" onclick="writeNumber(9)">9</button>
-                    <button class="num-btn" onclick="writeNumber(0)">0</button>
-                </div>
-                <div class="operation-pad">
-                    <button class="operation-btn" onclick="operator('ce')">CE</button>
-                    <button class="operation-btn" onclick="operator('ac')">AC</button>
-                    <button class="operation-btn" onclick="operator('÷')">÷</button>
-                    <button class="operation-btn" onclick="operator('×')">×</button>
-                    <button class="add-btn" onclick="operator('+')">+</button>
-                    <button class="operation-btn" onclick="operator('−')">-</button>
-                    <button class="equal-btn"  onclick="operator('=')">=</button>
+     <div class="container">
+        <div class="calculator">
+            <div class="theme-container">
+                <div class="theme-slider" id="theme-slider">
+                    <div class="circle" id="circle">0</div>
+                    <div class="ri-moon-line" id="symbol"></div>
                 </div>
             </div>
+            <div class="screen">
+               <div class="secondary white-icon" id="secondary"></div>  
+               <div class="primary white-icon" id="primary"></div>  
+               <div class="calc" id="calc"></div>  
+            </div>
+            <div class="keypad">
+                <button id="ac" class="green-icon key">AC</button>
+                <button id="+-" class="green-icon key">+/-</button>
+                <button id="%" class="green-icon key">%</button>
+                <button id="/" class="ri-divide-line red-icon key"></button>
+                <button id="7" class="white-icon key">7</button>
+                <button id="8" class="white-icon key">8</button>
+                <button id="9" class="white-icon key">9</button>
+                <button id="*" class="ri-close-line red-icon key"></button>
+                <button id="4" class="white-icon key">4</button>
+                <button id="5" class="white-icon key">5</button>
+                <button id="6" class="white-icon key">6</button>
+                <button id="-" class="ri-subtract-line red-icon key"></button>
+                <button id="1" class="white-icon key">1</button>
+                <button id="2" class="white-icon key">2</button>
+                <button id="3" class="white-icon key">3</button>
+                <button id="+" class="ri-add-line red-icon key"></button>
+                <button id="ce" class="ri-arrow-go-back-fill white-icon key"></button>
+                <button id="0" class="white-icon key">0</button>
+                <button id="." class="white-icon key">.</button>
+                <button id="=" class="ri-equal-line red-icon key"></button>
+            </div>
+            <div class="line"></div>
         </div>
     </div>
     </body>
